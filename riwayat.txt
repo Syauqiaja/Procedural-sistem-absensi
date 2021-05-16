@@ -1,0 +1,21 @@
+#
+ID 	: 1
+Nama 	: Ahmad Fajruddin Syauqi
+Tanggal : 2021-05-10
+Waktu 	: 21:12:37.617996
+Status 	: terlambat#
+ID 	: 2
+Nama 	: Diaz Wahyu Sya'bana
+Tanggal : 2021-05-10
+Waktu 	: 21:13:24.338130300
+Status 	: terlambat#
+ID 	: 1
+Nama 	: Ahmad Fajruddin Syauqi
+Tanggal : 2021-05-16
+Waktu 	: 10:21:23.536375700
+Status 	: terlambat#
+ID 	: 2
+Nama 	: Diaz Wahyu Sya'bana
+Tanggal : 2021-05-16
+Waktu 	: 22:20:31.913813800
+Status 	: terlambat
