@@ -38,6 +38,22 @@ public class SistemAbsensiProcedural {
         return result;
     }
 
+    public static void clrscr(){
+
+        try {
+    
+            if (System.getProperty("os.name").contains("Windows"))
+    
+                new ProcessBuilder("cmd", "/c", "cls").inheritIO().start().waitFor();
+    
+            else
+    
+                Runtime.getRuntime().exec("clear");
+    
+        } catch (IOException | InterruptedException ex) {}
+    
+    }
+
     public static List<String> ReadPass(){
         List<String> result = new ArrayList<String>();
         try{
@@ -93,8 +109,7 @@ public class SistemAbsensiProcedural {
     }
 
     public static void mainMenu(){
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
+        clrscr();  
         System.out.println("======== SISTEM ABSENSI PEGAWAI =========\n");
 
         System.out.println("==== MAIN MENU ====");
@@ -154,8 +169,7 @@ public class SistemAbsensiProcedural {
 
     public static void Presensi(){
         String nama, pass;
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
+        clrscr();  
         System.out.println("======== SISTEM ABSENSI PEGAWAI =========\n");
         
         System.out.println("==== PRESENSI ====");
@@ -192,8 +206,7 @@ public class SistemAbsensiProcedural {
     }
 
     public static void cekKehadiran(){
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
+        clrscr();  
         System.out.println("======== SISTEM ABSENSI PEGAWAI =========\n");
         
         System.out.println("==== CEK KEHADIRAN ====");
@@ -242,12 +255,11 @@ public class SistemAbsensiProcedural {
     }
 
     public static void ExitProgram(){
-        System.out.print("\033[H\033[2J");  
-        System.out.flush();  
+        clrscr();  
 
         try{
             System.out.println("==== TERIMA KASIH ====");
-            TimeUnit.SECONDS.sleep(2);
+            TimeUnit.SECONDS.sleep(1);
             System.exit(0);
         }catch(InterruptedException e){
             System.err.format("IOException: %s%n", e);
